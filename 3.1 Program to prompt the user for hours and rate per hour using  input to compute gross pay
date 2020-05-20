@@ -1,0 +1,35 @@
+#3.1 Write a program to prompt the user for hours and rate per hour using
+#input to compute gross pay.
+
+#Pay the hourly rate for the hours up to 40 and 1.5 times the hourly rate for
+#all hours worked above 40 hours.
+
+#Use 45 hours and a rate of 10.50 per hour to test the program
+#(the pay should be 498.75).
+
+#You should use input to read a string and float() to convert the string
+#to a number.
+
+#Do not worry about error checking
+#the user input - assume the user types numbers properly.
+
+hrs = input('Enter the Hours:') #Enter the hours i.e 45
+try: #Try to enter the interger value and hence h will convert that into float
+    h = float(hrs)
+except:
+    print('Error - Try enter numeric variable') #if not int() it will give Error
+rate = input('Enter the rate:') #Enter a rate i.e 10.50
+try:
+    r = float(rate) #Rate as int()
+except:
+    print('Error - Try enter numeric variable') #Ow it will give an error
+
+if h > 40 :
+    #print overtime
+    reg = h*r
+    otp = (h-40) * (r*0.5)
+    xp = reg + otp
+else:
+    xp = h*r
+
+print(xp)
