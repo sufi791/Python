@@ -1,0 +1,14 @@
+#Undestanding Functions Basics
+
+def thing() :
+    print('Hello World')
+    print('New Zeland')
+thing()
+print('ABC')
+thing()
+print('Sufi')
+thing()
+
+#Undestanding Functions Basics #With return() function
+
+
